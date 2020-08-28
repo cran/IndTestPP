@@ -2,8 +2,8 @@ exportPattern("^[[:alpha:]]+")
 import(parallel)
 importFrom("grDevices", "dev.new")
 importFrom("graphics", "abline", "axis", "legend", "lines", "mtext",
-             "par", "plot", "points", "segments", "title")
+             "par", "plot", "points", "segments", "title","text")
 importFrom("stats", "complete.cases", "convolve", "dpois", "ks.test",
              "pnorm", "ppois", "quantile", "rexp", "rmultinom", "rnorm",
-             "rpois", "runif")
-
+             "rpois", "runif","cor.test", "median", "rbinom", "setNames")
+importFrom("utils", "combn")

@@ -1,8 +1,8 @@
 NHKaux <-
-function(lambdaC, lambdaD,T, posC, typeC=1, posD, typeD=1,r=NULL, 
-	dplot=TRUE,tit='K(r).')
+function(lambdaC, lambdaD,T, posC, typeC, posD, typeD,r=NULL,typeEst)
 {
-	NHKr<-sapply(r, FUN=NHKaux2 ,lambdaC=lambdaC, lambdaD, posC=posC, 
-		typeC=typeC, posD=posD, typeD=typeD, T=T)
+	NHKraux<-sapply(r, FUN=NHKaux2 ,lambdaC=lambdaC, lambdaD, posC=posC, 
+		typeC=typeC, posD=posD, typeD=typeD, T=T, typeEst=typeEst)
+	NHKr<-NHKraux
 	return(NHKr)
 }
